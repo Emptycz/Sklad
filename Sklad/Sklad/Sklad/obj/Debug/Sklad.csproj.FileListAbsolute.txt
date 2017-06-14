@@ -1,0 +1,7 @@
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.csprojResolveAssemblyReference.cache
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.MainPage.xaml.g.cs
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.App.xaml.g.cs
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.detailsPage.xaml.g.cs
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.editItem.xaml.g.cs
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createItem.xaml.g.cs
+C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.addItem.xaml.g.cs

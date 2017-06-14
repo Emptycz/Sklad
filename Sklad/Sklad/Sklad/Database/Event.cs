@@ -7,22 +7,21 @@ using SQLite;
 
 namespace Sklad.Database
 {
-    public class Item
+    public class Event
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public DateTime TimeStamp { get; set; }
         public string Name { get; set; }
-        public string Brench { get; set; }
-        public List<int> Contains { get; set; }
-        public bool Available { get; set; }
-        public string Description { get; set; }
-        public Item()
+        public string Company { get; set; }
+        public List<string> Contains { get; set; }
+        public DateTime TimeC { get; set; }
+        public Event()
         {
         }
         public override string ToString()
         {
-            return "Name: " + Name + " Přidáno: " + TimeStamp;
+            return "Name: " + Name + " Přidáno: " + TimeC;
         }
     }
 

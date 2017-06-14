@@ -3,9 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Sklad"
              x:Class="Sklad.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    
+    <StackLayout BackgroundColor="#1a75ff" x:Name="scoresPg">
+        <Button x:Name="redirection" Text="Create new event"/>
+        <StackLayout Orientation="Vertical" Margin="50,5,50,5">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name" FontAttributes="Bold" TextColor="White" FontSize="20" />
+                <Label Text="Map" FontAttributes="Bold" TextColor="White" FontSize="20" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <ListView x:Name="mainList" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ContextMenu>
+                            <MenuItem Header="Edit" Clicked="EditItem_Clicked" />
+                            <MenuItem Header="Delete" Clicked="DeleteItem_Clicked" />
+                        </ContextMenu>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Margin="5,2,0,5">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" TextColor="White" FontAttributes="Bold" />
+                                    <Label Text="{Binding Brench}" TextColor="White" FontAttributes="Bold"
+                                HorizontalOptions="EndAndExpand" MinimumWidthRequest="140"/>
+                                    <Label Text="{Binding Contains}" TextColor="White" FontAttributes="Bold"
+                                HorizontalOptions="EndAndExpand" MinimumWidthRequest="140"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+    
 </ContentPage>

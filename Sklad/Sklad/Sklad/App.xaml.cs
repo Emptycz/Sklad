@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Sklad.Database;
+using Sklad;
+using SQLite;
 
 using Xamarin.Forms;
 
@@ -12,8 +15,7 @@ namespace Sklad
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Sklad.MainPage();
+            MainPage = new NavigationPage(new Sklad.MainPage());
         }
 
         protected override void OnStart()
@@ -30,5 +32,20 @@ namespace Sklad
         {
             // Handle when your app resumes
         }
+
+        private static ItemDatabase _database;
+
+        public static ItemDatabase Database
+        {
+            get
+            {
+                if (_database == null)
+                {
+                    _database = new ItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("SQLite.db3"));
+                }
+                return _database;
+            }
+        }
+
     }
 }
