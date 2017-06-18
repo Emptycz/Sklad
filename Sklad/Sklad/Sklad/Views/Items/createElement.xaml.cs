@@ -3,28 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Sklad.Views;
-using Sklad;
-using Sklad.Database;
 using Sklad.Constructors;
+using Sklad;
+using Sklad.Views.Items;
 
-namespace Sklad.Views
+namespace Sklad.Views.Items
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class createItem : ContentPage
+    public partial class createElement : ContentPage
     {
-        private ItemC to_write = new ItemC("", "", false, "");
-
-        public createItem()
+        ElementC to_write = new ElementC("", "");
+        public createElement()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-
         }
-
-
         private void Name_TextChanged(object sender, TextChangedEventArgs e)
         {
             //    NameText = Name.Text;
@@ -37,21 +33,9 @@ namespace Sklad.Views
             to_write.Description = Description.Text;
         }
 
-        private void Brench_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            to_write.Brench = Brench.Text;
-        }
-
-        private void Available_Toggled(object sender, ToggledEventArgs e)
-        {
-            to_write.Available = Available.IsToggled;
-        }
-
-
         private void Continue_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Sklad.Views.addItem(to_write), false);
+            Navigation.PushAsync(new Sklad.Views.Items.addElement(to_write), false);
         }
-
     }
 }

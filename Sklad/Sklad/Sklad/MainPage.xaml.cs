@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Sklad.Views;
 using Sklad;
+using Sklad.Views.Items;
 
 namespace Sklad
 {
@@ -65,13 +66,24 @@ namespace Sklad
 
         private void DeleteItem_Clicked(object sender, SelectedItemChangedEventArgs e)
         {
+            
             var pom = ((e.SelectedItem) as Item);
+            OnAlertYesNoClicked(sender, e, pom);
             /* mainList.ItemsSource = App.Database.GetItemsAsync().Result;
               mainList.ItemsSource = App.Database.GetItemsAsync().Result;
               mainList.ItemTapped += (s, e) =>
               {*/
-            Navigation.PushAsync(new Sklad.Views.detailsPage(pom), true);
+
             //  };
+        }
+        async void OnAlertYesNoClicked(object sender, EventArgs e, Item pom)
+        {
+            var answer = await DisplayAlert("", "Do you really want to delete this event?", "Yes", "No");
+            if (answer)
+            {
+                await Navigation.PushAsync(new Sklad.Views.Items.deletePage(pom), true);
+            }
+
         }
 
     }

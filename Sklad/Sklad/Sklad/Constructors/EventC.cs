@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sklad.Constructors
 {
-    class EventC
+    public class EventC
     {
         private string _name;
         private string _company;

@@ -17,6 +17,10 @@ namespace Sklad.Database
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<Item>().Wait();
+            database.CreateTableAsync<Elements>().Wait();
+            database.CreateTableAsync<Event>().Wait();
+            database.CreateTableAsync<ItemElement>().Wait();
+            database.CreateTableAsync<ItemEvent>().Wait();
         }
 
         // Query
@@ -42,10 +46,20 @@ namespace Sklad.Database
             return database.QueryAsync<Item>("SELECT * FROM [Item] ORDER BY `ID` DESC LIMIT 10");
         }
 
-        public Task<List<Item>> GetLastID()
+        public Task<List<Item>> GetLastItemID()
         {
-            return database.QueryAsync<Item>("SELECT seq FROM sqlite_sequence");
+            return database.QueryAsync<Item>("SELECT ID FROM Item ORDER BY ID DESC LIMIT 1");
         }
+
+        public Task<List<Event>> GetLastEventID()
+        {
+            return database.QueryAsync<Event>("SELECT ID FROM Event ORDER BY ID DESC LIMIT 1");
+        }
+        public Task<List<Elements>> GetLastElementsID()
+        {
+            return database.QueryAsync<Elements>("SELECT ID FROM Elements ORDER BY ID DESC LIMIT 1");
+        }
+
 
         public Task<int> SaveItemAsync(Item item)
         {
@@ -61,6 +75,55 @@ namespace Sklad.Database
             }
         }
 
+        public Task<int> SaveElementsAsync(Elements item)
+        {
+            if (item.ID != 0)
+            {
+                return database.UpdateAsync(item);
+            }
+            else
+            {
+                return database.InsertAsync(item);
+            }
+        }
+
+        public Task<int> SaveEventAsync(Event item)
+        {
+            item.TimeStamp = DateTime.Now;
+
+            if (item.ID != 0)
+            {
+                return database.UpdateAsync(item);
+            }
+            else
+            {
+                return database.InsertAsync(item);
+            }
+        }
+
+        public Task<int> SaveItemElementAsync(ItemElement item)
+        {
+            if (item.ID != 0)
+            {
+                return database.UpdateAsync(item);
+            }
+            else
+            {
+                return database.InsertAsync(item);
+            }
+        }
+
+        public Task<int> SaveItemEventAsync(ItemEvent item)
+        {
+            if (item.ID != 0)
+            {
+                return database.UpdateAsync(item);
+            }
+            else
+            {
+                return database.InsertAsync(item);
+            }
+        }
         public Task<int> DeleteItemAsync(Item item)
         {
             return database.DeleteAsync(item);

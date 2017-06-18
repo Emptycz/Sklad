@@ -13,8 +13,8 @@ namespace Sklad.Database
         public int ID { get; set; }
         public DateTime TimeStamp { get; set; }
         public string Name { get; set; }
-        public string Company { get; set; }
-        public List<string> Contains { get; set; }
+        public string Client { get; set; }
+        public string Worker { get; set; }
         public DateTime TimeC { get; set; }
         public Event()
         {

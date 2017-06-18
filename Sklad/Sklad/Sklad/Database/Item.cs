@@ -14,7 +14,6 @@ namespace Sklad.Database
         public DateTime TimeStamp { get; set; }
         public string Name { get; set; }
         public string Brench { get; set; }
-        public List<int> Contains { get; set; }
         public bool Available { get; set; }
         public string Description { get; set; }
         public Item()

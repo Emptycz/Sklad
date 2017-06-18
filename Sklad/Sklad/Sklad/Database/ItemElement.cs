@@ -5,21 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 
+
 namespace Sklad.Database
 {
-    public class Elements
+    public class ItemElement
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Elements()
+        public int ItemID { get; set; }
+        public int ElementID { get; set; }
+        public ItemElement()
         {
         }
-        public override string ToString()
-        {
-            return "Name: " + Name;
-        }
-
     }
 }

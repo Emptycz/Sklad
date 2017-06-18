@@ -19,8 +19,8 @@ namespace Sklad.Views
     public partial class addItem : ContentPage
     {
         private static List<int> contains = new List<int>();
-        private ItemC final_item = new ItemC("", "", contains, false, "");
-        private ItemC event_edit = new ItemC(1,"", "", contains, false, "", false);
+        private ItemC final_item = new ItemC("", "", false, "");
+        private ItemC event_edit = new ItemC(1,"", "", false, "", false);
 
         private int event_ID;
         public addItem(ItemC to_write)
@@ -32,7 +32,6 @@ namespace Sklad.Views
                 final_item.Brench = to_write.Brench;
                 final_item.Name = to_write.Name;
                 final_item.Description = to_write.Description;
-                final_item.Contains = to_write.Contains;
                 final_item.Available = to_write.Available;
 
                 if (final_item.Name == "")
@@ -49,7 +48,6 @@ namespace Sklad.Views
 
                 ItemDatabase ItemDatabase = App.Database;
                 Item item = new Item();
-                item.Contains = final_item.Contains;
                 item.Name = final_item.Name;
                 item.Available = final_item.Available;
                 item.Description = final_item.Description;
@@ -59,17 +57,16 @@ namespace Sklad.Views
             {
                 final_item.Name = to_write.Name;
                 final_item.Description = to_write.Description;
-                final_item.Contains = to_write.Contains;
                 final_item.Available = to_write.Available;
 
                 ItemDatabase ItemDatabase = App.Database;
                 Item item = new Item();
-                App.Database.SaveItemAsync(item);
+
                 item.ID = final_item.ID;
-                item.Contains = final_item.Contains;
                 item.Name = final_item.Name;
                 item.Available = final_item.Available;
                 item.Description = final_item.Description;
+                App.Database.SaveItemAsync(item);
             }
         }
 

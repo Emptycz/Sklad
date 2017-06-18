@@ -46,15 +46,26 @@
     <Compile Include="Database\IFileHelper.cs" />
     <Compile Include="Database\Item.cs" />
     <Compile Include="Database\ItemDatabase.cs" />
+    <Compile Include="Database\ItemElement.cs" />
+    <Compile Include="Database\ItemEvent.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Items\addElement.xaml.cs">
+      <DependentUpon>addElement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Items\addItem.xaml.cs">
       <DependentUpon>addItem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Items\createElement.xaml.cs">
+      <DependentUpon>createElement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Items\createItem.xaml.cs">
       <DependentUpon>createItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Items\deletePage.xaml.cs">
+      <DependentUpon>deletePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Items\detailsPage.xaml.cs">
       <DependentUpon>detailsPage.xaml</DependentUpon>
@@ -119,6 +130,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Items\addItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Items\deletePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Items\addElement.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Items\createElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

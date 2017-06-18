@@ -18,7 +18,7 @@ namespace Sklad.Views
     public partial class editItem : ContentPage
     {
         private static List<int> contains = new List<int>();
-        private ItemC item_update = new ItemC(1, "", "", contains, false, "", true);
+        private ItemC item_update = new ItemC(1, "", "", false, "", true);
         public editItem(Item item)
         {
             InitializeComponent();

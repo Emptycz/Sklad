@@ -7,19 +7,16 @@ using SQLite;
 
 namespace Sklad.Database
 {
-    public class Elements
+    public class ItemEvent
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Elements()
+        public int EventID { get; set; }
+        public int ItemID { get; set; }
+        
+        public ItemEvent()
         {
         }
-        public override string ToString()
-        {
-            return "Name: " + Name;
-        }
-
+      
     }
 }

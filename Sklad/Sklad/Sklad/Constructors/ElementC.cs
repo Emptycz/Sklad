@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sklad.Constructors
 {
-    class ElementC
+    public class ElementC
     {
         private string _name;
         private string _description;

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sklad.Views {
+namespace Sklad.Views.Items {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Jan Kočvara\\Source\\Repos\\Sklad\\Sklad\\Sklad\\Sklad\\Views\\Items\\addItem.xam" +
-        "l")]
-    public partial class addItem : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Jan Kočvara\\Source\\Repos\\Sklad\\Sklad\\Sklad\\Sklad\\Views\\Items\\addElement." +
+        "xaml")]
+    public partial class addElement : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label finished;
@@ -23,7 +23,7 @@ namespace Sklad.Views {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(addItem));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(addElement));
             finished = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "finished");
             RedirectHome = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "RedirectHome");
         }
