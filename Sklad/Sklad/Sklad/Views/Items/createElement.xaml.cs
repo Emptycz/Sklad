@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using Sklad.Constructors;
 using Sklad;
 using Sklad.Views.Items;
+using Sklad.Views;
 
 namespace Sklad.Views.Items
 {

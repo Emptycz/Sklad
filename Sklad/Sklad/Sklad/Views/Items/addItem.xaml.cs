@@ -12,6 +12,7 @@ using Sklad;
 using SQLite;
 using Application = Xamarin.Forms.Application;
 using Debug = System.Diagnostics.Debug;
+using Sklad.Views.Items;
 
 namespace Sklad.Views
 {
@@ -23,7 +24,7 @@ namespace Sklad.Views
         private ItemC event_edit = new ItemC(1,"", "", false, "", false);
 
         private int event_ID;
-        public addItem(ItemC to_write)
+        public addItem(ItemC to_write, SelectMultipleBasePage<CheckItem> multiPage)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
@@ -55,6 +56,7 @@ namespace Sklad.Views
             }
             else
             {
+                final_item.ID = to_write.ID;
                 final_item.Name = to_write.Name;
                 final_item.Description = to_write.Description;
                 final_item.Available = to_write.Available;

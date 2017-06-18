@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constructors\CheckItem.cs" />
     <Compile Include="Constructors\ElementC.cs" />
     <Compile Include="Constructors\EventC.cs" />
     <Compile Include="Constructors\ItemC.cs" />
@@ -58,6 +59,9 @@
     <Compile Include="Views\Items\addItem.xaml.cs">
       <DependentUpon>addItem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Items\ChooseElements.xaml.cs">
+      <DependentUpon>ChooseElements.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Items\createElement.xaml.cs">
       <DependentUpon>createElement.xaml</DependentUpon>
     </Compile>
@@ -73,6 +77,7 @@
     <Compile Include="Views\Items\editItem.xaml.cs">
       <DependentUpon>editItem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Items\SelectMultipleBasePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -148,6 +153,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Items\createElement.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Items\ChooseElements.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

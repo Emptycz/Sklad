@@ -17,60 +17,42 @@ namespace Sklad.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class editItem : ContentPage
     {
-        private static List<int> contains = new List<int>();
+        private string NameText;
+        private string DescriptionText;
         private ItemC item_update = new ItemC(1, "", "", false, "", true);
         public editItem(Item item)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            item_update.ID = item.ID;
             List<Item> ItemsSource = App.Database.GetItemsAsync().Result;
             foreach (Item i in ItemsSource)
             {
-              /*  Name.Text = i.Name;
-                Description.Text = i.Description;*/
+                Name.Placeholder = i.Name;
+                Description.Placeholder = i.Description;
+                Available.IsEnabled = i.Available;
             }
         }
         private void Name_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //    NameText = Name.Text;
-           // event2.name = Name.Text;
+            NameText = Name.Text;
+            item_update.Name = Name.Text;
         }
 
         private void Description_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //    DescriptionText = Description.Text;
-            //event2.description = Description.Text;
-        }
-
-
-        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
-        {
-            if (sender is DatePicker)
-            {
-             /*   DatePicker datePicker = (DatePicker)sender;
-                event2.cas = datePicker.Date;*/
-            }
-
-        }
-
-        private void TimePicker_PropertyChanged(object sender, EventArgs e)
-        {
-            if (sender is TimePicker)
-            {
-                TimePicker timePicker = (TimePicker)sender;
-                TimeSpan time = timePicker.Time;
-              //  event2.cas = event2.cas + time;
-            }
+           DescriptionText = Description.Text;
+           item_update.Description = Description.Text;
         }
 
         private void join_Toggled(object sender, ToggledEventArgs e)
         {
-          //  event2.ucast = join.IsToggled;
+            item_update.Available = Available.IsToggled;
         }
 
         private void Continue_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Sklad.Views.addItem(item_update), false);
+            Navigation.PushAsync(new Sklad.Views.Items.ChooseElements(item_update), false);
         }
     }
 }

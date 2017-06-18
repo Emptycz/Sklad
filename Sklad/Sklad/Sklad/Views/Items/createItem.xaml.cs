@@ -50,7 +50,7 @@ namespace Sklad.Views
 
         private void Continue_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Sklad.Views.addItem(to_write), false);
+            Navigation.PushAsync(new Sklad.Views.Items.ChooseElements(to_write), false);
         }
 
     }

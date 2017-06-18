@@ -50,6 +50,11 @@ namespace Sklad.Database
         {
             return database.QueryAsync<Item>("SELECT ID FROM Item ORDER BY ID DESC LIMIT 1");
         }
+        public Task<List<Item>> GetSpecificITem(int id)
+        {
+            return database.QueryAsync<Item>("SELECT *FROM Item WHERE ID =" + id);
+        }
+
 
         public Task<List<Event>> GetLastEventID()
         {
@@ -60,6 +65,10 @@ namespace Sklad.Database
             return database.QueryAsync<Elements>("SELECT ID FROM Elements ORDER BY ID DESC LIMIT 1");
         }
 
+        public Task<List<Elements>> GetCountElements()
+        {
+            return database.QueryAsync<Elements>("SELECT COUNT(ID) AS NumberOfProducts FROM Elements");             
+        }
 
         public Task<int> SaveItemAsync(Item item)
         {
