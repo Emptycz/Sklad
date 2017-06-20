@@ -69,6 +69,10 @@ namespace Sklad.Database
         {
             return database.QueryAsync<Elements>("SELECT COUNT(ID) AS NumberOfProducts FROM Elements");             
         }
+        public Task<List<Elements>> GetElementsAsync()
+        {
+            return database.Table<Elements>().ToListAsync();
+        }
 
         public Task<int> SaveItemAsync(Item item)
         {

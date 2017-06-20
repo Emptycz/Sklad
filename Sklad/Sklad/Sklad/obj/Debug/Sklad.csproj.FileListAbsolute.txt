@@ -10,3 +10,17 @@ C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createElement.xaml.g.cs
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.ChooseElements.xaml.g.cs
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.csprojResolveAssemblyReference.cache
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.MainPage.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.App.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.detailsPage.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.editItem.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createItem.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.addItem.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.deletePage.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.addElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.ChooseElements.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.selectElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.pdb
