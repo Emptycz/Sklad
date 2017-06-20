@@ -10,17 +10,34 @@ C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createElement.xaml.g.cs
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.ChooseElements.xaml.g.cs
 C:\Users\Jan Kočvara\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Sklad.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Sklad.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\SQLite-net.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\SQLite-net.xml
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.csprojResolveAssemblyReference.cache
 C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.MainPage.xaml.g.cs
 C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.App.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.detailsPage.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.editItem.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createItem.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.addItem.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.deletePage.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.addElement.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.createElement.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.ChooseElements.xaml.g.cs
-C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.Items.selectElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.addElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.createElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.ChooseElements.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.selectElement.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.createItems.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.addItems.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.detailsPages.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.deletePage.xaml.g.cs
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.Views.editItem.xaml.g.cs
 C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.dll
 C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.pdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\obj\Debug\Sklad.dll.mdb
+C:\Users\kocvaja14\Source\Repos\Sklad\Sklad\Sklad\Sklad\bin\Debug\Sklad.dll.mdb

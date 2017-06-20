@@ -9,26 +9,12 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Sklad.Views;
 using Sklad;
-using Sklad.Views.Items;
 
 namespace Sklad
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
-
-        private static ItemDatabase _database;
-        public static ItemDatabase Database
-        {
-            get
-            {
-                if (_database == null)
-                {
-                    _database = new ItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("SQLite2.db3"));
-                }
-                return _database;
-            }
-        }
 
         private void selectedItemMethod(object sender, ItemTappedEventArgs e)
         {
@@ -39,11 +25,13 @@ namespace Sklad
         public MainPage()
         {
             InitializeComponent();
-           /* NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, false);
+
             redirection.Clicked += (s, e) => {
-                Navigation.PushAsync(new .createEvent(), true);
+                Navigation.PushAsync(new Sklad.Views.createItems(), true);
             };
-            */
+            
+            
             var itemsFromDb = App.Database.GetItemsBy().Result;
             mainList.ItemsSource = itemsFromDb;
 
@@ -56,35 +44,35 @@ namespace Sklad
 
         private void EditItem_Clicked(object sender, SelectedItemChangedEventArgs e)
         {
-            var pom = ((e.SelectedItem) as Item);
+          /*  var pom = ((e.SelectedItem) as Item);
             mainList.ItemsSource = App.Database.GetItemsAsync().Result;
             //mainList.ItemTapped += (s, e) =>
             //{
             Navigation.PushAsync(new Sklad.Views.editItem(pom), true);
-            //};
+            //};*/
         }
 
         private void DeleteItem_Clicked(object sender, SelectedItemChangedEventArgs e)
         {
-            
+          /*  
             var pom = ((e.SelectedItem) as Item);
             OnAlertYesNoClicked(sender, e, pom);
-            /* mainList.ItemsSource = App.Database.GetItemsAsync().Result;
+            mainList.ItemsSource = App.Database.GetItemsAsync().Result;
               mainList.ItemsSource = App.Database.GetItemsAsync().Result;
               mainList.ItemTapped += (s, e) =>
-              {*/
-
-            //  };
+              {
+                  Navigation.PushAsync(new Sklad.Views.Items.deletePage(pom), false);
+             // };*/
         }
-        async void OnAlertYesNoClicked(object sender, EventArgs e, Item pom)
-        {
-            var answer = await DisplayAlert("", "Do you really want to delete this event?", "Yes", "No");
-            if (answer)
-            {
-                await Navigation.PushAsync(new Sklad.Views.Items.deletePage(pom), true);
-            }
+        /* async void OnAlertYesNoClicked(object sender, EventArgs e, Item pom)
+{
+    var answer = await DisplayAlert("", "Do you really want to delete this event?", "Yes", "No");
+    if (answer)
+    {
+        await Navigation.PushAsync(new Sklad.Views.Items.deletePage(pom), true);
+    }
 
-        }
-
+}
+*/
     }
 }

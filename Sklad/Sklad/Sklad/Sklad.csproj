@@ -53,34 +53,34 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Items\addElement.xaml.cs">
+    <Compile Include="Views\addElement.xaml.cs">
       <DependentUpon>addElement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\addItem.xaml.cs">
-      <DependentUpon>addItem.xaml</DependentUpon>
+    <Compile Include="Views\addItems.xaml.cs">
+      <DependentUpon>addItems.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\ChooseElements.xaml.cs">
+    <Compile Include="Views\ChooseElements.xaml.cs">
       <DependentUpon>ChooseElements.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\createElement.xaml.cs">
+    <Compile Include="Views\createElement.xaml.cs">
       <DependentUpon>createElement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\createItem.xaml.cs">
-      <DependentUpon>createItem.xaml</DependentUpon>
+    <Compile Include="Views\createItems.xaml.cs">
+      <DependentUpon>createItems.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\deletePage.xaml.cs">
+    <Compile Include="Views\deletePage.xaml.cs">
       <DependentUpon>deletePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\detailsPage.xaml.cs">
-      <DependentUpon>detailsPage.xaml</DependentUpon>
+    <Compile Include="Views\detailsPages.xaml.cs">
+      <DependentUpon>detailsPages.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\editItem.xaml.cs">
+    <Compile Include="Views\editItem.xaml.cs">
       <DependentUpon>editItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\selectElement.xaml.cs">
+    <Compile Include="Views\selectElement.xaml.cs">
       <DependentUpon>selectElement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Items\SelectMultipleBasePage.cs" />
+    <Compile Include="Views\SelectMultipleBasePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -97,13 +97,13 @@
       <HintPath>..\..\packages\sqlite-net-pcl.1.3.3\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.6\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.6\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.6\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
@@ -119,55 +119,55 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\detailsPage.xaml">
+    <EmbeddedResource Include="Views\addElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\editItem.xaml">
+    <EmbeddedResource Include="Views\createElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\createItem.xaml">
+    <EmbeddedResource Include="Views\ChooseElements.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\addItem.xaml">
+    <EmbeddedResource Include="Views\selectElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\deletePage.xaml">
+    <EmbeddedResource Include="Views\createItems.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\addElement.xaml">
+    <EmbeddedResource Include="Views\addItems.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\createElement.xaml">
+    <EmbeddedResource Include="Views\detailsPages.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\ChooseElements.xaml">
+    <EmbeddedResource Include="Views\deletePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Items\selectElement.xaml">
+    <EmbeddedResource Include="Views\editItem.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -15,10 +15,10 @@
             <ListView x:Name="mainList" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ContextMenu>
-                            <MenuItem Header="Edit" Clicked="EditItem_Clicked" />
-                            <MenuItem Header="Delete" Clicked="DeleteItem_Clicked" />
-                        </ContextMenu>
+                        <!-- <ContextMenu>
+                            <MenuItem Clicked="EditItem_Clicked"> Edit </MenuItem> />
+                            <MenuItem Text="Delete" Clicked="DeleteItem_Clicked" /> 
+                        </ContextMenu> -->
                         <ViewCell>
                             <StackLayout Orientation="Vertical" Margin="5,2,0,5">
                                 <StackLayout Orientation="Horizontal">
@@ -30,7 +30,7 @@
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
-                    </DataTemplate>
+                    </DataTemplate> 
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>

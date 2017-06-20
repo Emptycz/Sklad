@@ -64,6 +64,11 @@ namespace Sklad.Database
         {
             return database.QueryAsync<Elements>("SELECT ID FROM Elements ORDER BY ID DESC LIMIT 1");
         }
+        public Task<List<ItemElement>> GetLastItemElementsID()
+        {
+            return database.QueryAsync<ItemElement>("SELECT ID FROM ItemElements ORDER BY ID DESC LIMIT 1");
+        }
+
 
         public Task<List<Elements>> GetCountElements()
         {
